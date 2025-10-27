@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# 🧠 Microsoft AutoGen AI Website Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### React + Node.js + Azure OpenAI | AI Agent That Builds Static Websites
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📘 Overview
 
-### `npm start`
+This project demonstrates how to use **Microsoft AutoGen** with **Azure OpenAI Service** to build an AI Agent that can generate **HTML and CSS code** based on user prompts.  
+The app uses a **React frontend** and a **Node.js backend**, powered by **Azure OpenAI GPT models**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can also chat with the AI Bot — it interacts naturally and creates fully functional static webpages that you can download and view instantly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚡ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🤖 Build an AI Agent using **Microsoft AutoGen**
+- 💬 Chatbot interface to generate HTML + CSS code
+- 💻 Backend integration with **Azure OpenAI API**
+- ⚙️ Node.js + Express setup for API and file generation
+- 🌐 React frontend for chat interaction
+- 🧱 Auto file generation (`generated.html`) for every response
+- 🔒 Secure Azure API Key setup using `.env`
+- 💰 Uses **Free Tier** of Azure OpenAI (Pay-As-You-Go friendly)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏗️ Architecture Flow
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```mermaid
+graph TD
+A[React Frontend] -->|Sends prompt| B[Node.js Backend]
+B -->|API Request| C[Azure OpenAI / Microsoft AutoGen]
+C -->|Response (HTML/CSS code)| B
+B -->|Save file| D[Generated HTML File]
+A -->|Displays bot reply + Download link| B
+```
